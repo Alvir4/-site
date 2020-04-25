@@ -101,7 +101,7 @@ function loop() {
   context.fillRect(leftPaddle.x, leftPaddle.y, leftPaddle.width, leftPaddle.height);
   context.fillRect(rightPaddle.x, rightPaddle.y, rightPaddle.width, rightPaddle.height);
 
-  // move ball by its velocity
+  // vitesse de la balle
   ball.x += ball.dx;
   ball.y += ball.dy;
 
@@ -167,11 +167,11 @@ document.addEventListener('keydown', function(e) {
     rightPaddle.dy = paddleSpeed;
   }
 
-  // haut clavier
+  // haut clavier (z)
   if (e.which === 90) {
     leftPaddle.dy = -paddleSpeed;
   }
-  // bas clavier
+  // bas clavier(s)
   else if (e.which === 83) {
     leftPaddle.dy = paddleSpeed;
   }
